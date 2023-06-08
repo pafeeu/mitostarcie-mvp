@@ -226,6 +226,7 @@ public class Controller
         var resultMessage = _currentPlayer.Name+" dealt " + attack.Sum + " damage to " + target.Name;
         if (attack.Success)
         {
+            _currentPlayer.TakeDefeatedMonster(target);
             var victim = _currentPlayer.HaveWarriorInTeam(AvailableWarriorTypes.Einherjar) ? 
                 AvailableWarriorTypes.Einherjar : AvailableWarriorTypes.Valkiria;
             _currentPlayer.GetOutWarriorFromTeam(victim);

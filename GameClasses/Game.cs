@@ -178,6 +178,11 @@ public class GamePlayer
         Team.Remove(card);
         Game.RejectCard(card);
     }
+    public void TakeDefeatedMonster(Monster monster)
+    {
+        Monsters.Add(monster);
+        Game.MonstersOnTable.Remove(monster);
+    }
 
     public Modifier GetModifier(ModifierType type)
     {

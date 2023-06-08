@@ -1,7 +1,4 @@
-﻿using GameClasses;
-using GameMechanics;
-using Spectre.Console;
-
+﻿using GameMechanics;
 
 var game = new Controller();
 
